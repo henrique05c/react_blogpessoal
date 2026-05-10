@@ -1,0 +1,11 @@
+import type tema from "./tema";
+import type Usuario from "./Usuario";
+
+export default interface Postagem {
+    id: number;
+    titulo: string;
+    texto: string;
+    data: string;
+    tema?: tema | null;
+    usuario?: Usuario | null;
+}
